@@ -13,9 +13,11 @@ function Detalhes() {
 
    useEffect(() => async () => {
     setLoading(true)
+    console.log("Esperando");
     const res = await findByIndex(id);
+    console.log("Concluido");
     setUser(res);
-      setLoading(false)
+    setLoading(false)
    }, [mudou])
 
     return (
