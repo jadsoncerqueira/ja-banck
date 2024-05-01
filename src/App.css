@@ -1,0 +1,259 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+/** tela home **/
+
+.logo-home {
+  margin: 20px 0;
+}
+
+.btn-home {
+  padding: 15px;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  border-radius: 8px;
+}
+
+.btn-home:nth-child(2) {
+  background-color: #43EB00;
+}
+
+.btn-home:nth-child(3) {
+  background-color: #ffffff;
+  color: #0058F8;
+}
+
+
+.div-home {
+  /** border: 1px solid red; **/
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/** tela usuarios **/
+
+
+.card-usuario {
+  background-color: transparent;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+  width: 95%;
+  cursor: pointer;
+}
+
+.saldo-usuario {
+  color: #7fff4d;
+  font-weight: bold;
+}
+
+.div-usuarios {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-usuarios {
+  border: none;
+  width: 90%;
+  height: 40px;
+  padding: 0 10px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  background-color: white;
+  color: black;
+  font-family: 'Montserrat';
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.div-usuario-principal {
+  padding: 0 10px;
+}
+
+/** tela cadastrar **/
+
+.label-nome, .label-saldo {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  margin: 0 20px;
+}
+
+.label-nome input, .label-saldo input {
+  border: none;
+  background-color: white;
+  height: 25px;
+  border-radius: 5px;
+  padding: 10px;
+  color: black;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.div-cadastrar {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.btn-cadastrar {
+  margin: 0 19px;
+  padding: 15px;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 800;
+  color: rgb(255, 255, 255);
+  background-color: #43EB00;
+  font-size: 18px;
+  border-radius: 8px;
+}
+
+/** tela detalhes **/
+.div-detalhes-btn {
+ display: flex;
+ justify-content: center;
+ gap: 20px;
+}
+
+.btn-credito {
+  background-color: #43EB00;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 800;
+  font-size: 18px;
+  border-radius: 8px;
+}
+
+.btn-debito {
+  background-color: red;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 800;
+  font-size: 18px;
+  border-radius: 8px;
+}
+
+.input-set {
+  border: none;
+  background-color: white;
+  height: 120px;
+  width: 150px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  color: black;
+  font-size: 40px;
+  font-family: 'Montserrat';
+  font-weight: 800;
+  text-align: center;
+}
+
+.nome-usuario-detalhes {
+  font-size: 23px;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.saldo-usuario-detalhes {
+  margin-top: 0;
+}
+
+/** btn inicio **/
+
+.btn-inicio {
+  background-color: rgb(0, 41, 129);
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat";
+  font-weight: bold;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  font-size: 20px;
+  border-top: 1px solid rgb(255, 255, 255);
+}
+
+/** btn voltar **/
+
+.btn-voltar {
+  padding: 0;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.158);
+}
+
+.btn-voltar img {
+  width: 25px;
+  transform: scaleX(-1);
+}
+
+.header {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 20px;
+}
+
+.header h1 {
+  margin: 0 10%;
+}
+
+.p-btn {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
