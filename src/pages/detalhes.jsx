@@ -11,13 +11,13 @@ function Detalhes() {
   const [mudou, setmMudou] = useState(true)
    const {id} =useParams()
 
-   useEffect(() => async () => {
+   useEffect(() => {
     setLoading(true)
-    console.log("Esperando");
-    const res = await findByIndex(id);
-    console.log("Concluido");
-    setUser(res);
-    setLoading(false)
+    findByIndex(id).then(res => {
+      setUser(res)
+      setUser(res);
+      setLoading(false)
+    });
    }, [mudou])
 
     return (
