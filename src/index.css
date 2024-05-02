@@ -22,6 +22,7 @@ a:hover {
 
 body {
   margin: 0;
+  padding-top: 20px;
   background-color: #0058F8;
  /** display: flex;
   place-items: center; **/
