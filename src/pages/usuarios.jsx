@@ -32,9 +32,7 @@ function Usuarios() {
 
 
     return (
-      {
-        loading ? <p>Carregando...</p>
-        : <div className="div-usuario-principal">
+     <div className="div-usuario-principal">
         
         <div className="header">
           <BotaoVoltar />
@@ -44,13 +42,15 @@ function Usuarios() {
   <input value={search} onChange={({target}) => {
     setSearch(target.value)
   }} placeholder="Pesquisar..." className="input-usuarios" type="text" />
-  <div className="div-usuarios">
+       {
+         loading ? <p>Carregando...</p>
+         : <div className="div-usuarios">
     {
       usuarios.length > 0 ? usuarios.map((usuario, index) => <Usuario key={index} usuario={usuario} />) : "Sem usuários"
     }
   </div>
+       }
       </div>
-      }
       
     )
   }
