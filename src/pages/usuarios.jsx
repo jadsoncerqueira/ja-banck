@@ -7,16 +7,19 @@ import BotaoVoltar from "../components/botaoVoltar"
 
 function Usuarios() {
   const [search, setSearch] = useState("")
+  const [loading, setLoading] = useState(true)
   const [usu, setUso] = useState([])
 
   let usuarios = usu.filter((el) => el.nome.toUpperCase().includes(search.toLocaleUpperCase()))
   
   useEffect(() => {
+    setLoading(true)
     getValues().then(res => {
       res.sort((a, b) => {
         return a.saldoDracma > b.saldoDracma ? -1 : a.saldoDracma < b.saldoDracma ? 1 : 0;
       })
       setUso(res)
+      setLoading(false)
     })
 
   }, [])
@@ -29,7 +32,9 @@ function Usuarios() {
 
 
     return (
-      <div className="div-usuario-principal">
+      {
+        loading ? <p>Carregando...</p>
+        : <div className="div-usuario-principal">
         
         <div className="header">
           <BotaoVoltar />
@@ -45,6 +50,8 @@ function Usuarios() {
     }
   </div>
       </div>
+      }
+      
     )
   }
   
